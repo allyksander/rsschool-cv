@@ -1,5 +1,3 @@
-# rsschool-cv
-
 ## Main information
 
 Lastnane  
