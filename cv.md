@@ -49,16 +49,17 @@ English level
 
 About myself  
 ***I work as a frontend developer in a web studio. I develop corporate websites, online stores and landing pages. My duties include:***  
+
 * Implementing websites from concept through deployment.
 * Standardizing all output with a new, responsive, mobile-first approach and strategy.
 * Helping other team members with solving implementation issues
 * Assessing UX and UI designs for technical feasibility.
 * Collaborating with product team members to implement new feature developments.  
+
 ***The purpose of my training is to update and systematize the existing knowledge, improve the skills sufficient to create complex and modern applications and move to a new level of application development***  
 ***In my free time from work and study, I like to play music (playing drums), play board games with friends, ride a bike, go hiking and sometimes play computer games.***
 
-
-Courses  
+## Courses  
 ***[Modern Front-End using JavaScript and HTML5](<https://www.markdownguide.org>), 2019***
 
 ## Work experience
