@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>HTML, CSS & Git Basics</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./libs/highlight-js/default.min.css">
 </head>
 
 <body>
@@ -38,405 +40,548 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <aside class="aside">
-                <div class="col-wrap">
-                    <div class="aside-foto">
-                        <div class="aside-foto__img">
-                            <picture>
-                                <img src="./images/my-foto.jpg" alt="">
-                            </picture>
+    <div class="container">
+        <aside class="aside">
+            <div class="col-wrap">
+                <div class="aside-foto">
+                    <div class="aside-foto__img">
+                        <picture>
+                            <img src="./images/my-foto.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="aside-foto__text">
+                        <h1>Panchenko Aleksandr</h1>
+                        <span>Frontend developer</span>
+                    </div>
+                </div>
+                <ul class="ul-border">
+                    <li>
+                        <div class="ul-border__img">
+                            <img src="./icons/email.svg" alt="">
                         </div>
-                        <div class="aside-foto__text">
-                            <h1>Panchenko Aleksandr</h1>
-                            <span>Frontend developer</span>
+                        <a href="mailto:aleksandr.panchenko.1989@gmail.com">aleksandr.panchenko.1989@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="ul-border__img">
+                            <img src="./icons/phone.svg" alt="">
+                        </div>
+                        <a href="tel:+375444687925">+375 (44) 468-79-25</a>
+                    </li>
+                    <li>
+                        <div class="ul-border__img">
+                            <img src="./icons/phone.svg" alt="">
+                        </div>
+                        <a href="tel:+375444687925">+375 (29) 518-12-75</a>
+                    </li>
+                    <li>
+                        <div class="ul-border__img">
+                            <img src="./icons/placemark.svg" alt="">
+                        </div>
+                        <a href="https://www.google.com/maps/place/Minsk/@53.8847608,27.4532866,11z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9011018!4d27.5592041"
+                            target="_blank">Belarus, Minsk</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="col-wrap">
+                <section class="main-block" id="information">
+                    <h2 class="main-block__title">
+                        <span>Information</span>
+                    </h2>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Lastname:</span>
+                        <span class="main-block__info">Panchenko</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Firstname:</span>
+                        <span class="main-block__info">Aleksandr</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Middle name:</span>
+                        <span class="main-block__info">Alexeyevich</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Date of birth:</span>
+                        <span class="main-block__info">1989-09-09</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Hometown:</span>
+                        <span class="main-block__info">Belarus, Polotsk</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">About myself:</span>
+                        <div class="main-block__info">
+                            <p>I work as a frontend developer in a web studio. I develop corporate websites, online
+                                stores and landing pages</p>
+                            <p>The purpose of my training is to update and systematize the existing knowledge,
+                                improve the skills sufficient to create complex and modern applications and move to
+                                a new level of application development</p>
+                            <p>In my free time from work and study, I like to play music (playing drums), play board
+                                games with friends, ride a bike, go hiking and sometimes play computer games.</p>
                         </div>
                     </div>
-                    <ul class="ul-border">
-                        <li>
-                            <div class="ul-border__img">
-                                <img src="./icons/email.svg" alt="">
-                            </div>
-                            <a href="mailto:aleksandr.panchenko.1989@gmail.com">aleksandr.panchenko.1989@gmail.com</a>
-                        </li>
-                        <li>
-                            <div class="ul-border__img">
-                                <img src="./icons/phone.svg" alt="">
-                            </div>
-                            <a href="tel:+375444687925">+375 (44) 468-79-25</a>
-                        </li>
-                        <li>
-                            <div class="ul-border__img">
-                                <img src="./icons/phone.svg" alt="">
-                            </div>
-                            <a href="tel:+375444687925">+375 (29) 518-12-75</a>
-                        </li>
-                        <li>
-                            <div class="ul-border__img">
-                                <img src="./icons/placemark.svg" alt="">
-                            </div>
-                            <a href="https://www.google.com/maps/place/Minsk/@53.8847608,27.4532866,11z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9011018!4d27.5592041"
-                                target="_blank">Belarus, Minsk</a>
-                        </li>
-                    </ul>
+                </section>
+                <section class="main-block" id="education">
+                    <h2 class="main-block__title">
+                        <span>Education</span>
+                    </h2>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Educational institution:</span>
+                        <span class="main-block__info">Polotsk state university</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">City of training:</span>
+                        <span class="main-block__info">Polotsk, Novopolotsk</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Faculty:</span>
+                        <span class="main-block__info">Faculty of Civil Engineering</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Department:</span>
+                        <span class="main-block__info">Department of Heat, Water and Gas Supply, and
+                            Ventilation</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Qualification:</span>
+                        <span class="main-block__info">Civil engineer</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Year of graduation :</span>
+                        <span class="main-block__info">2012</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">English level:</span>
+                        <span class="main-block__info">A2+</span>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Additional education:</span>
+                        <div class="main-block__info">
+                            <ul class="ul-dot">
+                                <li>
+                                    <a href="#https://belhard.academy/frontend-html5-javascript">Modern Front-End
+                                        using JavaScript and HTML5</a>
+                                    , 2019
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-block" id="experience">
+                    <h2 class="main-block__title">
+                        <span>Experience</span>
+                    </h2>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Work experience:</span>
+                        <div class="main-block__info">
+                            <ul class="ul-dot">
+                                <li>
+                                    <p>Palace of the Republic</p>
+                                    <p>Operational Engineer</p>
+                                    <div class="main-block__name">
+                                        <p>09/2014 - 09/2019</p>
+                                        <p>Operation of fire extinguishing systems, documentation management,
+                                            procurement, interaction with contractors</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Web studio "MediaLine"</p>
+                                    <p>Operational Engineer</p>
+                                    <div class="main-block__name">
+                                        <p>01/2020 - until now</p>
+                                        <p>Implementing websites from concept through deployment, standardizing all
+                                            output with a new, responsive, mobile-first approach and strategy,
+                                            helping other team members with solving implementation issues, assessing
+                                            UX and UI designs for technical feasibility, collaborating with product
+                                            team members to implement new feature developments.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-block" id="skills">
+                    <h2 class="main-block__title">
+                        <span>Skills</span>
+                    </h2>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Main skills:</span>
+                        <div class="main-block__info">
+                            <ul class="ul-dot">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Scss, Less</li>
+                                <li>JavaScript</li>
+                                <li>JQuery</li>
+                                <li>Gulp</li>
+                                <li>React (basic knowledge)</li>
+                                <li>Git (GitHub, GitLab)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Additional skills:</span>
+                        <div class="main-block__info">
+                            <ul class="ul-dot">
+                                <li>Figma</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="main-block" id="portfolio">
+                    <h2 class="main-block__title">
+                        <span>Portfolio</span>
+                    </h2>
+                    <div class="main-block__group">
+                        <p>All software projects were developed using HTML5, CSS3, Javascript, Jquery and the Jquery library</p>
+                        <span class="main-block__name">Realised project (personal):</span>
+                        <ul class="ul-img">
+                            <li>
+                                <a href="https://polisid.com/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/polisid.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Polisid</span>
+                                            <p>Corporate website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://grushevka.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/grushevka.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Квартал на Грушевке</span>
+                                            <p>Corporate website + e-commerce</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://arena.evroopt.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/evroopt.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Евроопт «Арена»</span>
+                                            <p>Landing page</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://jobs.e-dostavka.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/e-dostavka.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Е-доставка «Вакансии»</span>
+                                            <p>Landing page</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cpo.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/cpo.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Центр промышленной оценки</span>
+                                            <p>Corporate website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Realised project (as part of the team):</span>
+                        <ul class="ul-img">
+                            <li>
+                                <a href="https://vitalur.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/vitalur.png" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Виталюр</span>
+                                            <p>Corporate website + e-commerce</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://newbor.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/new-bor.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Новая Боровая</span>
+                                            <p>Corporate website + e-commerce</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://mbbelarus.by/all-models/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/mercedes-benz.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Mercedes-Benz, Беларусь</span>
+                                            <p>Corporate website + e-commerce</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://stbank.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/statusbank.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Статусбанк</span>
+                                            <p>Corporate website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://showproduct.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/mlk.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>MLK-Showproduct</span>
+                                            <p>Corporate website + e-commerce</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.bzpi.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/bzpi.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>ОАО «БЗПИ»</span>
+                                            <p>Corporate website</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-block__group">
+                        <span class="main-block__name">Realised project (as part of the team):</span>
+                        <ul class="ul-img">
+                            <li>
+                                <a href="https://ekt.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/ekt.png" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>ЕКТ Компани</span>
+                                            <p>Corporate website + e-commerce</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ipmtorgi.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/ipm.png" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>ИПМ-Торги</span>
+                                            <p>Corporate website + ETP</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.aversev.by/" target="_blank">
+                                    <figure>
+                                        <picture>
+                                            <img src="./images/aversev.svg" alt="">
+                                        </picture>
+                                        <figcaption>
+                                            <span>Издательство "Аверсэв"</span>
+                                            <p>Corporate website + e-commerce</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <article>
+            <p>As an example of code insertion, I give the javascript code used on this page:</p>
+            <div class="col-wrap accordion js-acc">
+                <div class="accordion__title js-acc-btn">
+                    <h3>Code example</h3>
+                    <div class="accordion__btn"></div>
                 </div>
-            </aside>
-            <article class="article">
-                <div class="col-wrap">
-                    <section class="article-block" id="information">
-                        <h3 class="article-block__title">
-                            <span>Information</span>
-                        </h3>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Lastname:</span>
-                            <span class="article-block__info">Panchenko</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Firstname:</span>
-                            <span class="article-block__info">Aleksandr</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Middle name:</span>
-                            <span class="article-block__info">Alexeyevich</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Date of birth:</span>
-                            <span class="article-block__info">1989-09-09</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Hometown:</span>
-                            <span class="article-block__info">Belarus, Polotsk</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">About myself:</span>
-                            <div class="article-block__info">
-                                <p>I work as a frontend developer in a web studio. I develop corporate websites, online
-                                    stores and landing pages</p>
-                                <p>The purpose of my training is to update and systematize the existing knowledge,
-                                    improve the skills sufficient to create complex and modern applications and move to
-                                    a new level of application development</p>
-                                <p>In my free time from work and study, I like to play music (playing drums), play board
-                                    games with friends, ride a bike, go hiking and sometimes play computer games.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="article-block" id="education">
-                        <h3 class="article-block__title">
-                            <span>Education</span>
-                        </h3>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Educational institution:</span>
-                            <span class="article-block__info">Polotsk state university</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">City of training:</span>
-                            <span class="article-block__info">Polotsk, Novopolotsk</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Faculty:</span>
-                            <span class="article-block__info">Faculty of Civil Engineering</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Department:</span>
-                            <span class="article-block__info">Department of Heat, Water and Gas Supply, and
-                                Ventilation</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Qualification:</span>
-                            <span class="article-block__info">Civil engineer</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Year of graduation :</span>
-                            <span class="article-block__info">2012</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">English level:</span>
-                            <span class="article-block__info">A2+</span>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Additional education:</span>
-                            <div class="article-block__info">
-                                <ul class="ul-dot">
-                                    <li>
-                                        <a href="#https://belhard.academy/frontend-html5-javascript">Modern Front-End
-                                            using JavaScript and HTML5</a>
-                                        , 2019
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="article-block" id="experience">
-                        <h3 class="article-block__title">
-                            <span>Experience</span>
-                        </h3>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Work experience:</span>
-                            <div class="article-block__info">
-                                <ul class="ul-dot">
-                                    <li>
-                                        <p>Palace of the Republic</p>
-                                        <p>Operational Engineer</p>
-                                        <div class="article-block__name">
-                                            <p>09/2014 - 09/2019</p>
-                                            <p>Operation of fire extinguishing systems, documentation management,
-                                                procurement, interaction with contractors</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>Web studio "MediaLine"</p>
-                                        <p>Operational Engineer</p>
-                                        <div class="article-block__name">
-                                            <p>01/2020 - until now</p>
-                                            <p>Implementing websites from concept through deployment, standardizing all
-                                                output with a new, responsive, mobile-first approach and strategy,
-                                                helping other team members with solving implementation issues, assessing
-                                                UX and UI designs for technical feasibility, collaborating with product
-                                                team members to implement new feature developments.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="article-block" id="skills">
-                        <h3 class="article-block__title">
-                            <span>Experience</span>
-                        </h3>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Main skills:</span>
-                            <div class="article-block__info">
-                                <ul class="ul-dot">
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                    <li>Scss, Less</li>
-                                    <li>JavaScript</li>
-                                    <li>JQuery</li>
-                                    <li>Gulp</li>
-                                    <li>React (basic knowledge)</li>
-                                    <li>Git (GitHub, GitLab)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Additional skills:</span>
-                            <div class="article-block__info">
-                                <ul class="ul-dot">
-                                    <li>Figma</li>
-                                    <li>Photoshop</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="article-block" id="portfolio">
-                        <h3 class="article-block__title">
-                            <span>Portfolio</span>
-                        </h3>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Realised project (personal):</span>
-                            <ul class="ul-img">
-                                <li>
-                                    <a href="https://polisid.com/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/polisid.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Polisid</span>
-                                                <p>Corporate website</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://grushevka.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/grushevka.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Квартал на Грушевке</span>
-                                                <p>Corporate website + e-commerce</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arena.evroopt.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/evroopt.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Евроопт «Арена»</span>
-                                                <p>Landing page</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://jobs.e-dostavka.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/e-dostavka.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Е-доставка «Вакансии»</span>
-                                                <p>Landing page</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.cpo.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/cpo.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Центр промышленной оценки</span>
-                                                <p>Corporate website</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Realised project (as part of the team):</span>
-                            <ul class="ul-img">
-                                <li>
-                                    <a href="https://vitalur.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/vitalur.png" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Виталюр</span>
-                                                <p>Corporate website + e-commerce</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://newbor.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/new-bor.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Новая Боровая</span>
-                                                <p>Corporate website + e-commerce</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://mbbelarus.by/all-models/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/mercedes-benz.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Mercedes-Benz, Беларусь</span>
-                                                <p>Corporate website + e-commerce</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://stbank.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/statusbank.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Статусбанк</span>
-                                                <p>Corporate website</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://showproduct.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/mlk.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>MLK-Showproduct</span>
-                                                <p>Corporate website + e-commerce</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.bzpi.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/bzpi.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>ОАО «БЗПИ»</span>
-                                                <p>Corporate website</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="article-block__group">
-                            <span class="article-block__name">Realised project (as part of the team):</span>
-                            <ul class="ul-img">
-                                <li>
-                                    <a href="https://ekt.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/ekt.png" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>ЕКТ Компани</span>
-                                                <p>Corporate website + e-commerce</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://ipmtorgi.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/ipm.png" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>ИПМ-Торги</span>
-                                                <p>Corporate website + ETP</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.aversev.by/" target="_blank">
-                                        <figure>
-                                            <picture>
-                                                <img src="./images/aversev.svg" alt="">
-                                            </picture>
-                                            <figcaption>
-                                                <span>Издательство "Аверсэв"</span>
-                                                <p>Corporate website + e-commerce</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
+                <div class="accordion__dropdown js-acc-dropdown">
+                    <pre>
+                        <code>
+        window.addEventListener('load', () => {
+            const width = window.innerWidth,
+                burger = document.querySelector('.js-open-menu')
+        
+            if (burger) {
+                burger.addEventListener('click', (e) => {
+                    burger.classList.toggle('opened')
+                    document.querySelector('body').classList.toggle('body--menu-opened')
+                    document.querySelector('body').classList.toggle('body--overflow')
+                })
+            }
+        
+        
+            document.addEventListener('mouseup', (e) => {
+                if (document.querySelector('body').classList.contains('body--menu-opened')) {
+        
+                    if (!document.querySelector('header').contains(e.target)) {
+                        burger.click()
+                    }
+                }
+            })
+        
+            const anchors = document.querySelectorAll('.js-menu [href*="#"]')
+            if (anchors.length) {
+                anchors.forEach(function (item) {
+                    item.addEventListener('click', function (e) {
+                        e.preventDefault()
+        
+                        const parentLink = item.parentNode,
+                            linkClientTop = parentLink.getBoundingClientRect().top,
+                            docScrollTop = document.documentElement.scrollTop,
+                            linkOffsetTop = linkClientTop + docScrollTop,
+                            targetOffsetTop = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + docScrollTop - document.querySelector('header').offsetHeight - 10,
+                            different = targetOffsetTop - linkOffsetTop
+        
+                        animate({
+                            duration: 1000,
+                            timing(timeFraction) {
+                                return Math.pow(timeFraction, 2)
+                            },
+                            draw(progress) {
+                                window.scrollTo(0, docScrollTop + progress * (linkClientTop + different))
+                            }
+                        })
+        
+                        burger.click()
+                    })
+                })
+            }
+        
+            const acc = document.querySelectorAll('.js-acc')
+            if (acc.length) {
+                acc.forEach(
+                    item => {
+                        const dropdown = item.querySelector('.js-acc-dropdown'),
+                            btn = item.querySelector('.js-acc-btn'),
+                            heightdropdown = dropdown.offsetHeight
+        
+                        dropdown.style.height = '0px'
+        
+                        btn.addEventListener('click', () => {
+                            item.classList.toggle('opened')
+                            dropdown.classList.toggle('opened')
+        
+                            if (item.classList.contains('opened')) {
+                                animate({
+                                    duration: 500,
+                                    timing(timeFraction) {
+                                        return timeFraction
+                                    },
+                                    draw(progress) {
+                                        dropdown.style.height = progress * heightdropdown + 'px'
+                                    }
+                                })
+                                setTimeout(() => {
+                                    dropdown.removeAttribute('style')
+                                }, 300)
+                            } else {
+                                animate({
+                                    duration: 500,
+                                    timing(timeFraction) {
+                                        return timeFraction;
+                                    },
+                                    draw(progress) {
+                                        let antiProgress = 1 - progress
+                                        dropdown.style.height = antiProgress * heightdropdown + 'px'
+                                    }
+                                })
+                            }
+                        })
+                    }
+                )
+            }
+        
+            hljs.highlightAll()
+        })
+        
+        function getSiblings(elem) {
+            let siblings = [],
+                sibling = elem
+        
+            while (sibling.previousSibling) {
+                sibling = sibling.previousSibling
+                sibling.nodeType == 1 && siblings.push(sibling)
+            }
+        
+            sibling = elem
+        
+            while (sibling.nextSibling) {
+                sibling = sibling.nextSibling
+                sibling.nodeType == 1 && siblings.push(sibling)
+            }
+        
+            return siblings
+        }
+        
+        function animate({ duration, timing, draw }) {
+            let start = performance.now()
+        
+            requestAnimationFrame(function animate(time) {
+                let timeFraction = (time - start) / duration
+                if (timeFraction > 1) timeFraction = 1
+        
+                let progress = timing(timeFraction)
+                draw(progress)
+        
+                if (1 > timeFraction) {
+                    requestAnimationFrame(animate)
+                }
+            })
+        }
+                        </code>
+                    </pre>
                 </div>
-            </article>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
+            </div>
+        </article>
+        <footer class="footer">
             <div class="col-wrap">
                 <div class="footer-logo">
                     <a href="https://github.com/allyksander" target="_blank">
@@ -450,8 +595,9 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="./libs/highlight-js/highlight.min.js"></script>
     <script src="./scripts/scripts.js"></script>
 </body>
 

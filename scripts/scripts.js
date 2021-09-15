@@ -2,23 +2,23 @@ window.addEventListener('load', () => {
     const width = window.innerWidth,
         burger = document.querySelector('.js-open-menu')
 
-    if (burger && width <= 600) {
-        console.log('sdfsdfs')
+    if (burger) {
         burger.addEventListener('click', (e) => {
             burger.classList.toggle('opened')
             document.querySelector('body').classList.toggle('body--menu-opened')
             document.querySelector('body').classList.toggle('body--overflow')
         })
-
-        document.addEventListener('mouseup', (e) => {
-            if (document.querySelector('body').classList.contains('body--menu-opened')) {
-
-                if (!document.querySelector('header').contains(e.target)) {
-                    burger.click()
-                }
-            }
-        })
     }
+
+
+    document.addEventListener('mouseup', (e) => {
+        if (document.querySelector('body').classList.contains('body--menu-opened')) {
+
+            if (!document.querySelector('header').contains(e.target)) {
+                burger.click()
+            }
+        }
+    })
 
     const anchors = document.querySelectorAll('.js-menu [href*="#"]')
     if (anchors.length) {
@@ -47,6 +47,52 @@ window.addEventListener('load', () => {
             })
         })
     }
+
+    const acc = document.querySelectorAll('.js-acc')
+    if (acc.length) {
+        acc.forEach(
+            item => {
+                const dropdown = item.querySelector('.js-acc-dropdown'),
+                    btn = item.querySelector('.js-acc-btn'),
+                    heightdropdown = dropdown.offsetHeight
+
+                dropdown.style.height = '0px'
+
+                btn.addEventListener('click', () => {
+                    item.classList.toggle('opened')
+                    dropdown.classList.toggle('opened')
+
+                    if (item.classList.contains('opened')) {
+                        animate({
+                            duration: 500,
+                            timing(timeFraction) {
+                                return timeFraction
+                            },
+                            draw(progress) {
+                                dropdown.style.height = progress * heightdropdown + 'px'
+                            }
+                        })
+                        setTimeout(() => {
+                            dropdown.removeAttribute('style')
+                        }, 300)
+                    } else {
+                        animate({
+                            duration: 500,
+                            timing(timeFraction) {
+                                return timeFraction;
+                            },
+                            draw(progress) {
+                                let antiProgress = 1 - progress
+                                dropdown.style.height = antiProgress * heightdropdown + 'px'
+                            }
+                        })
+                    }
+                })
+            }
+        )
+    }
+
+    hljs.highlightAll()
 })
 
 function getSiblings(elem) {
